@@ -323,14 +323,15 @@ QToolTip {
     background-color: var(--widget-background);
 }
 .calendar .calendar-table {
-    background-color: var(--widget-background);
-    border-radius: 10px;
+    background-color: transparent;
 }
 .calendar .calendar-table::item {
     border: none;
 }
 .calendar .calendar-table::item:selected {
     color: var(--pinkish);
+    background-color: var(--crust);
+    border-radius: 6px;
 }
 .calendar .day-label,
 .calendar .month-label,
