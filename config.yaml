@@ -1,3 +1,4 @@
+# To center the contents of the bar exactly in the center, use: go to the style.css
 watch_stylesheet: True
 watch_config: True
 debug: False

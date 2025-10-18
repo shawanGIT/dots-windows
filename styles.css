@@ -1,4 +1,9 @@
 /* root */
+/* To center the contents of the bar exactly in the center, use: */
+.clock-grouper {
+    margin: 0px 50px 0px 0px;
+}
+/* To center the contents of the bar exactly in the center, use this*/
 :root {
     --green: #49b265;
     --black: #000000;
@@ -100,9 +105,6 @@
 }
 .clock-grouper .container {
     padding: 0px 10px 0px 10px;
-}
-.clock-grouper {
-    margin: 0px 50px 0px 0px;
 }
 /* Widgets */
 .clock-widget .widget-container,
