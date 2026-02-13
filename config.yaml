@@ -502,8 +502,8 @@ widgets:
       label: "<span>\uf51b</span>"
       uptime: False
       show_user: False
-      blur: false
-      blur_background: true
+      blur: False
+      blur_background: True
       animation_duration: 120 # Milliseconds
       button_row: 4 # Number of buttons in a row, min 1 max 6
       buttons:
@@ -516,7 +516,7 @@ widgets:
         restart: ["\uead2", "Reboot"]
         cancel: ["\udb81\udf3a", "Cancel"]
       label_shadow:
-        enabled: false
+        enabled: False
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
