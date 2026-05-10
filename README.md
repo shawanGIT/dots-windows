@@ -64,8 +64,8 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 ### Left Section
 | Widget | Description |
 |--------|-------------|
-| ⚡ Power Menu | Shutdown, restart, sleep, logout |
-| 🪟 Active App | Name of currently focused application |
+| Power Menu | Shutdown, restart, sleep, logout |
+| Active App | Name of currently focused application |
 
 ### Center Section
 | Widget | Description |
