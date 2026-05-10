@@ -6,7 +6,7 @@
 [![Windows](https://img.shields.io/badge/Windows-11-0078d6?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
 [![Inspired](https://img.shields.io/badge/Inspired%20by-dots--hyprland-9333ea?style=for-the-badge)](https://github.com/end-4/dots-hyprland)
 
-> A modern, minimal status bar theme for [YASB](https://github.com/amnweb/yasb) on Windows 11. Inspired by [dots-hyprland](https://github.com/end-4/dots-hyprland). No tiling, just elegance.
+> No tiling, just bar.
 
 <p align="center">
   <strong>🌍 English | <a href="#-русский">Русский</a></strong>
