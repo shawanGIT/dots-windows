@@ -21,14 +21,14 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎨 **Minimalist design** inspired by dots-hyprland
-- 🖥️ **Device-aware widgets** — battery indicator appears only on portable devices
-- ⌨️ **Custom widgets**: screenshoter (PrintScreen), on-screen keyboard, dot separator
-- 🌤️ **Weather widget** with one-time location setup
-- 🔄 **12/24h clock toggle** via right-click
-- 💡 **Auto-hide** for unavailable widgets (WiFi, Bluetooth, brightness)
+- **Minimalist design** inspired by dots-hyprland
+- **Device-aware widgets** — battery indicator appears only on portable devices
+- **Custom widgets**: screenshoter (PrintScreen), on-screen keyboard, dot separator
+- **Weather widget** with one-time location setup
+- **12/24h clock toggle** via right-click
+- **Auto-hide** for unavailable widgets (WiFi, Bluetooth, brightness)
 
 ---
 
@@ -47,7 +47,7 @@ For proper rendering, install these fonts:
 If you see overlay text instead of weather:
 1. Click the placeholder (rightmost element near center)
 2. Enter your location (data is stored locally)
-3. Enjoy real-time weather ☀️🌧️
+3. Enjoy real-time weather
 
 **To change location later:**
 ```powershell
@@ -70,11 +70,11 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 ### Center Section
 | Widget | Description |
 |--------|-------------|
-| 🖥️ CPU Load | Real-time processor usage |
-| 💾 RAM | Memory usage indicator |
-| 🌐 Network | Upload/download speed |
-| 🎵 Media | Current track/app with audio (hidden when silent) |
-| 🗂️ Taskbar | All open windows across virtual/desktop workspaces |
+| CPU Load | Real-time processor usage |
+| RAM | Memory usage indicator |
+| Network | Upload/download speed |
+| Media | Current track/app with audio (hidden when silent) |
+| Taskbar | All open windows across virtual/desktop workspaces |
 
 ![Taskbar Widget](assets/taskbar.png)
 
@@ -89,13 +89,13 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 ### Right Section
 | Widget | Description |
 |--------|-------------|
-| 🕐 Clock | Time & date (right-click to toggle 12/24h format) |
-| 🎬 Actions | Screenshoter On-screen keyboard Brightness* |
-| 🌤️ Weather | Current conditions & temperature |
-| ⌨️ Layout | Current keyboard input language |
+| Clock | Time & date (right-click to toggle 12/24h format) |
+| Actions | Screenshoter On-screen keyboard Brightness* |
+| Weather | Current conditions & temperature |
+| Layout | Current keyboard input language |
 | • | Decorative dot separator |
-| 🔔 Notifications | System notification indicator |
-| 📶 WiFi / 🦷 Bluetooth | Connection status |
+| Notifications | System notification indicator |
+| WiFi / Bluetooth | Connection status |
 
 *\*Brightness control appears only on supported devices*
 
@@ -103,7 +103,7 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 
 ## ⚙️ Configuration & Troubleshooting
 
-### 🎯 Centering Issues
+### Centering Issues
 
 If the bar appears misaligned:
 
@@ -157,20 +157,20 @@ This README is available in:
 
 > Современная тема для YASB, вдохновлённая dots-hyprland от end-4. Минималистичный бар для Windows 11 без тайлинга.
 
-### ✨ Возможности
-- 🎨 Минималистичный дизайн в стиле dots-hyprland
-- 🖥️ Адаптация под устройства — батарея только на ноутбуках
-- ⌨️ Кастомные виджеты: screenshoter, экранная клавиатура, разделитель-точка
-- 🌤️ Погода с выбором локации
-- 🔄 Переключение 12/24ч по ПКМ
-- 💡 Авто-скрытие ненужных виджетов
+### Возможности
+- Минималистичный дизайн в стиле dots-hyprland
+- Адаптация под устройства — батарея только на ноутбуках
+- Кастомные виджеты: screenshoter, экранная клавиатура, разделитель-точка
+- Погода с выбором локации
+- Переключение 12/24ч по ПКМ
+- Авто-скрытие ненужных виджетов
 
 ### 📦 Установка
 1. Установите шрифты **Rubik** и **JetBrains Mono**
 2. Настройте погоду: нажмите на placeholder, введите локацию
 3. Для смены локации: удалите `%LOCALAPPDATA%\YASB\weather.json` и перезагрузите YASB
 
-### 📐 Структура бара (слева направо)
+### Структура бара (слева направо)
 - **Слева**: Power Menu, активное приложение
 - **Центр**: CPU, RAM, сеть, медиа, taskbar (или workspaces)
 - **Справа**: часы, действия, погода, раскладка, уведомления, WiFi/Bluetooth
