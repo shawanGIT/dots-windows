@@ -90,7 +90,7 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 | Widget | Description |
 |--------|-------------|
 | Clock | Time & date (right-click to toggle 12/24h format) |
-| Actions | Screenshoter On-screen keyboard Brightness* |
+| Actions | Screenshoter / On-screen keyboard / Brightness* |
 | Weather | Current conditions & temperature |
 | Layout | Current keyboard input language |
 | • | Decorative dot separator |
@@ -101,7 +101,7 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 
 ---
 
-## ⚙️ Configuration & Troubleshooting
+## Configuration & Troubleshooting
 
 ### Centering Issues
 
@@ -109,11 +109,11 @@ If the bar appears misaligned:
 
 1. Open `~/.config/yasb/style.css`
 2. Adjust `margin`
-3. Save & reload YASB
+3. Save style.css
 
 ![centering](assets/centering.png)
 
-### 📁 Config Paths Reference
+### Config Paths Reference
 
 | File | Purpose | Path |
 |------|---------|------|
