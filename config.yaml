@@ -15,7 +15,6 @@ bars:
       duration: 1000
     blur_effect:
       enabled: True
-      acrylic: True
     window_flags:
       windows_app_bar: True
     dimensions:
@@ -79,21 +78,6 @@ widgets:
         "wifi",
         "bluetooth"
       ]
-  power_menu:
-    type: "yasb.power_menu.PowerMenuWidget"
-    options:
-      label: "\uf011"
-      uptime: True
-      blur: True
-      blur_background: True
-      animation_duration: 200
-      button_row: 5
-      buttons:
-        shutdown: ["\uf011", "Shut Down"]
-        restart: ["\uead2", "Reboot"]
-        signout: ["\udb80\udf43", "Sign out"]
-        hibernate: ["\uf28e", "Hibernate"]
-        sleep: ["\u23fe", "Sleep"]
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
@@ -126,15 +110,21 @@ widgets:
         animation: True
       callbacks:
         on_right: "exec cmd /c Taskmgr"
-        on_left: "exec cmd /c Taskmgr"
+        on_left: "toggle_menu"
         on_middle: "do_nothing"
+      menu:
+        enabled: True
+        show_graph: True
+        show_graph_grid: True
+        graph_history_size: 60
+        alignment: "center"
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
       label: "{virtual_mem_used}"
       label_alt: "{virtual_mem_percent}%"
       update_interval: 1000
-      progress_bar: 
+      progress_bar:
         enabled: True
         position: 'left'
         size: 24
@@ -142,14 +132,20 @@ widgets:
         color: '#d2e5f4'
         animation: True
       callbacks:
-        on_left: "toggle_label"
-        on_middle: "do_nothing"
+        on_left: "toggle_menu"
+        on_middle: "toggle_label"
         on_right: "do_nothing"
+      menu:
+        enabled: true
+        show_graph: true
+        show_graph_grid: true
+        graph_history_size: 60
+        alignment: "center"
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
-      label: "<span>\udb82\udcfa</span> {download_speed}"  
-      label_alt: "<span>\udb82\udcfa</span> {download_speed}"   
+      label: "<span>\udb82\udcfa</span> {download_speed}"
+      label_alt: "<span>\udb82\udcfa</span> {download_speed}"
       update_interval: 3000
       speed_unit: "bytes"
     callbacks:
@@ -205,7 +201,6 @@ widgets:
     options:
       label_workspace_btn: "\u2022"
       label_workspace_active_btn: "\uebb4"
-      animation: True
   clock:
     type: "yasb.clock.ClockWidget"
     options:
@@ -213,7 +208,7 @@ widgets:
       label_alt: "{%I:%M \u2022 %a, %m/%d}"
       locale: "us"
       update_interval: 1000
-      calendar: 
+      calendar:
         blur: True
         round_corners: True
         round_corners_type: "normal"
@@ -248,20 +243,6 @@ widgets:
       label: ""
       label_alt: ""
       tooltip: True
-      hide_unsupported: True
-      brightness_toggle_level: [0, 50, 100]
-      auto_light: False
-      auto_light_icon: "\udb80\udce1"
-      auto_light_night_level: 35
-      auto_light_night_start_time: "19:00"
-      auto_light_night_end_time: "06:45"
-      auto_light_day_level: 75
-      brightness_icons: [
-        "\udb85\udce4",  # 0-25%
-        "\udb80\udcdc",  # 26-50% 
-        "\udb80\udcdb",  # 51-75%
-        "\udb80\udcda"   # 76-100%
-      ]
       progress_bar:
         enabled: True
         position: 'left'
@@ -276,6 +257,8 @@ widgets:
         border_color: "system"
         alignment: "center"
         direction: "down"
+        brightness_icon: "\ue30d"
+        contrast_icon: "\uf042"
       callbacks:
           on_left: "toggle_brightness_menu"
   battery:
@@ -350,7 +333,7 @@ widgets:
         icon_smoothing: True
         temp_line_width: 2
         current_line_color: "#8EAEE8"
-        current_line_width: 1 
+        current_line_width: 1
         current_line_style: "dot"
         hourly_gradient:
           enabled: True
@@ -461,7 +444,7 @@ widgets:
      label_device_separator: ", "
      max_length: 10
      max_length_ellipsis: ""
-     icons: 
+     icons:
        bluetooth_on: "\udb80\udcaf"
        bluetooth_off: "\udb80\udcb2"
        bluetooth_connected: "\udb80\udcb1"
@@ -494,8 +477,8 @@ widgets:
       show_user: False
       blur: False
       blur_background: True
-      animation_duration: 120 # Milliseconds
-      button_row: 4 # Number of buttons in a row, min 1 max 6
+      animation_duration: 120
+      button_row: 4
       buttons:
         lock: ["\udb80\udf41", "Lock"]
         sleep: ["\ue32b", "Sleep"]
@@ -505,8 +488,3 @@ widgets:
         shutdown: ["\uf011", "Shut Down"]
         restart: ["\uead2", "Reboot"]
         cancel: ["\udb81\udf3a", "Cancel"]
-      label_shadow:
-        enabled: False
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
