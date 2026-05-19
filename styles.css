@@ -551,6 +551,12 @@
     border: none;
     font-size: 25px;
     padding: 0px 6px 0px 6px;
+    border-radius: 13px;
+    margin: 0px;
+
+    transition-property: background-color, border-radius, margin;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
 }
 .windows-desktops .ws-btn:hover {
     background-color: rgba(210, 229, 244, 0.2);
@@ -794,6 +800,9 @@
     background-color: rgba(0, 0, 0, 0);
     padding: 4px;
     min-width: 70px;
+    transition-property: background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
 }
 .open-meteo-card-day .day-name {
     font-family: "Rubik Light";
@@ -850,13 +859,14 @@
 }
 .open-meteo-card .hourly-data-button {
     border-radius: 13px;
-    min-height: 24px;
-    min-width: 24px;
-    max-width: 24px;
-    max-height: 24px;
+    min-height: 26px;
+    min-width: 26px;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.3);
     border: 1px solid transparent;
+    transition-property: background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
 }
 .open-meteo-card .hourly-data-button.active {
     color: #fff;
@@ -1036,9 +1046,12 @@
 }
 .taskbar-widget .app-container {
     background-color: var(--green);
-    padding: 3px 3px 3px 3px;
-    margin: 5px 2px 5px 2px;
+    padding: 3px;
+    margin: 5px 2px;
     border-radius: 10px;
+    transition-property: border, padding, margin, background-color, max-width, max-height;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
 }
 .taskbar-widget .app-container.foreground {
     background-color: var(--pale-blue);
@@ -1048,9 +1061,8 @@
     border-radius: 8;
 }
 .taskbar-widget .app-container:hover {
-    border-radius: 10px;
-    padding: 0px 2px 0px 2px;
-    margin: 3px 2px 7px 2px;
+    padding: 3px;
+    margin: 0px 5px 10px 5px;
 }
 .taskbar-widget .app-container.running {
     background-color: rgba(210, 229, 244, 0.2);
@@ -1066,12 +1078,16 @@
     font-size: 20px;
 }
 .power-menu-widget .widget-container {
-    background-color: var(--slate-gray);
+    background-color: transparent;
+    transition-property: border-radius, background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
     padding: 0px 9px 0px 9px;
-    border-radius: 18px;
+    border-radius: 8px;
 }
 .power-menu-widget .widget-container:hover {
-    background-color: rgba(210, 229, 244, 0.2);
+    background-color: var(--slate-gray);
+    border-radius: 18px;
 }
 .power-menu-popup {
     background-color: rgba(255, 255, 255, 0);
@@ -1083,7 +1099,10 @@
     min-height: 155px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 8px solid rgba(255, 255, 255, 0)
+    border: 8px solid rgba(255, 255, 255, 0);
+    transition-property: background-color, border-radius;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 }
 .power-menu-popup .button.hover {
     background-color: var(--pale-blue);
