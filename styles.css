@@ -137,10 +137,27 @@
     padding-right: 2px;
 }
 .language-widget, .dotseparator-widget,
-.notification-widget, .wifi-widget,
-.bluetooth-widget {
+.wifi-widget {
     padding-right: 15px;
 }
+.notification-widget, .bluetooth-widget {
+    padding-right: 8px;
+}
+.control-center {
+    background-color: transparent;
+    padding-left: 7px;
+    margin: 2px 0px 2px 0px;
+    border-radius: 6px;
+
+    transition-property: border-radius, background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
+}
+.control-center:hover {
+    border-radius: 16px;
+    background-color: var(--slate-gray);
+}
+
 .bluetooth-widget .icon {
     font-size: 20px;
 }

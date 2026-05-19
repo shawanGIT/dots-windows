@@ -76,6 +76,13 @@ widgets:
         "language",
         "dotseparator",
         "notifications",
+        "control-center"
+      ]
+  control-center:
+    type: "yasb.grouper.GrouperWidget"
+    options:
+      class_name: "control-center"
+      widgets: [
         "wifi",
         "bluetooth"
       ]
@@ -403,7 +410,7 @@ widgets:
      callbacks:
        on_left: "exec cmd.exe /c explorer.exe ms-actioncenter:controlcenter/true"
        on_middle: "exec cmd.exe /c start ms-settings:network"
-       on_right: "toggle_label"
+       on_right: "toggle_menu"
      ethernet_label: "<span>{wifi_icon}</span>"
      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
      ethernet_icon: "\udb80\ude00"
@@ -453,7 +460,8 @@ widgets:
        - name: "T5.0"
          alias: "\uf025"
      callbacks:
-       on_left: "toggle_label"
+       on_left: "exec cmd.exe /c explorer.exe ms-actioncenter:controlcenter/true"
+       on_middle: "toggle_label"
        on_right: "exec cmd.exe /c start ms-settings:bluetooth"
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
