@@ -89,12 +89,8 @@ widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
-      label: " {win[process][name]}"
-      rewrite:
-        - pattern: "^(.+?)\\.exe$"
-          replacement: "\\1"
-      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: ""
+      label: " {win[app_name]}"
+      label_no_window: "Workspace"
       label_icon: True
       label_icon_size: 18
       max_length: 30
