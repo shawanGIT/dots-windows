@@ -1105,3 +1105,19 @@
 .power-menu-overlay {
     background-color: rgba(0, 0, 0, 0.15);
 }
+/* Wallpapers */
+.wallpapers-gallery-window {
+    background-color: var(--widget-background);
+    border-radius: 26px;
+    padding: 16px;
+}
+.wallpapers-gallery-image {
+    border: 4px solid transparent;
+    border-radius: 26px;
+}
+.wallpapers-gallery-image.focused {
+    border: 4px solid var(--pale-blue);
+}
+.wallpapers-gallery-image:hover {
+    border: 4px solid var(--slate-gray);
+}
