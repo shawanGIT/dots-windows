@@ -564,7 +564,7 @@
 }
 .windows-desktops .ws-btn {
     font-family: "JetBrainsMono NFP ExtraBold";
-    color: #7f849c;
+    color: var(--slate-gray);
     border: none;
     font-size: 25px;
     padding: 0px 6px 0px 6px;
@@ -634,7 +634,7 @@
 }
 /* Calendar */
 .calendar {
-    background-color: var(--yasb-background);
+    background-color: var(--widget-background);
 }
 .calendar .calendar-table,
 .calendar .calendar-table::item {
@@ -684,9 +684,6 @@
     padding: 0px 6px 0px 6px;
     border-radius: 13px;
 }
-.screenshot-widget .widget-container:hover {
-    background-color: var(--slate-gray);
-}
 /* Showkeyboard */
 .showkeyboard-widget {
     padding: 0px 2px 0px 2px;
@@ -694,9 +691,6 @@
 .showkeyboard-widget .widget-container {
     padding: 0px 5px 0px 5px;
     border-radius: 13px;
-}
-.showkeyboard-widget .widget-container:hover {
-    background-color: var(--slate-gray);
 }
 /* Brightness */
 .brightness-widget {
@@ -708,9 +702,6 @@
 .brightness-widget .widget-container {
     padding: 0px 3px 0px 3px;
     border-radius: 14px;
-}
-.brightness-widget .widget-container:hover {
-    background-color: var(--slate-gray);
 }
 .brightness-menu {
     min-width: 300px;
@@ -814,7 +805,6 @@
 .open-meteo-card-day {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0);
     padding: 4px;
     min-width: 70px;
     transition-property: background-color;
@@ -1057,7 +1047,6 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
-
 .taskbar-widget .widget-container {
     padding: 0px 5px 0px 5px;
 }
@@ -1075,7 +1064,7 @@
 }
 .taskbar-widget .app-container .app-icon {
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8;
+    border-radius: 8px;
 }
 .taskbar-widget .app-container:hover {
     padding: 3px;
@@ -1084,6 +1073,7 @@
 .taskbar-widget .app-container.running {
     background-color: rgba(210, 229, 244, 0.2);
 }
+/* Power menu */
 .power-menu-widget {
     padding-left: 16px;
 }

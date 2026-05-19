@@ -140,9 +140,9 @@ widgets:
         on_middle: "toggle_label"
         on_right: "do_nothing"
       menu:
-        enabled: true
-        show_graph: true
-        show_graph_grid: true
+        enabled: True
+        show_graph: True
+        show_graph_grid: True
         graph_history_size: 60
         alignment: "center"
   traffic:
