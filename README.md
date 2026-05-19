@@ -1,6 +1,6 @@
 # dots-windows
 
-![Weather Setup](preview.png)
+![preview](preview.png)
 
 [![YASB](https://img.shields.io/badge/YASB-blue?style=for-the-badge)](https://github.com/amnweb/yasb)
 [![Windows](https://img.shields.io/badge/Windows-11-0078d6?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
@@ -25,7 +25,7 @@
 
 - **Minimalist design** inspired by dots-hyprland
 - **Device-aware widgets** — battery indicator appears only on portable devices
-- **Custom widgets**: screenshoter (PrintScreen), on-screen keyboard, dot separator
+- **Custom widgets**: screenshoter (PrintScreen), on-screen keyboard, dot separator, control-center
 - **Weather widget** with one-time location setup
 - **12/24h clock toggle** via right-click
 - **Auto-hide** for unavailable widgets (WiFi, Bluetooth, brightness)
@@ -87,15 +87,15 @@ Remove-Item "$env:LOCALAPPDATA\YASB\weather.json"
 
 ![windows_workspaces](assets/windows_workspaces.png)
 ### Right Section
-| Widget | Description |
-|--------|-------------|
-| Clock | Time & date (right-click to toggle 12/24h format) |
-| Actions | Screenshoter / On-screen keyboard / Brightness* |
-| Weather | Current conditions & temperature |
-| Layout | Current keyboard input language |
-| • | Decorative dot separator |
-| Notifications | System notification indicator |
-| WiFi / Bluetooth | Connection status |
+| Widget                            | Description |
+|-----------------------------------|-------------|
+| Clock                             | Time & date (right-click to toggle 12/24h format) |
+| Actions                           | Screenshoter / On-screen keyboard / Brightness* |
+| Weather                           | Current conditions & temperature |
+| Layout                            | Current keyboard input language |
+| •                                 | Decorative dot separator |
+| Notifications                     | System notification indicator |
+| control_center (WiFi / Bluetooth) | Connection status |
 
 *\*Brightness control appears only on supported devices*
 
@@ -127,9 +127,9 @@ If the bar appears misaligned:
 
 ## Who Is This For?
 
-1. [X] Windows 11 users seeking a clean, modern status bar  
-2. [X] Fans of minimalism & dots-hyprland aesthetics  
-3. [X] Users who want enhancements without replacing their workflow  
+1. &#9989; Windows 11 users seeking a clean, modern status bar  
+2. &#9989; Fans of minimalism & dots-hyprland aesthetics  
+3. &#9989; Users who want enhancements without replacing their workflow  
 
 ❌ Not for users seeking a full tiling window manager experience
 
@@ -160,7 +160,7 @@ This README is available in:
 ### Возможности
 - Минималистичный дизайн в стиле dots-hyprland
 - Адаптация под устройства — батарея только на ноутбуках
-- Кастомные виджеты: screenshoter, экранная клавиатура, разделитель-точка
+- Кастомные виджеты: screenshoter, экранная клавиатура, разделитель-точка, центр управления
 - Погода с выбором локации
 - Переключение 12/24ч по ПКМ
 - Авто-скрытие ненужных виджетов
